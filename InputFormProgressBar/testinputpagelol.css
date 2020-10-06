@@ -1,0 +1,192 @@
+﻿  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+ overflow:scroll;
+  background: url("bg.png"), -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+}
+.container{
+             width: 1100px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+    margin-right: 172px;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+         }
+
+h1{
+ font-size: 25px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  text-align:center;
+}
+
+.firstpage{
+    width: 100%;
+  overflow: hidden;
+ transition: margin-left 0.3s ease-in-out;
+}
+
+h4{
+    text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+section{
+    width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+
+section label{
+    position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+
+.dropdownlist{
+    width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.textbox{
+    height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+
+
+.radiocontainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.button{
+  border: none;
+  background: #d33f8d;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+  padding:12px 40px 16px;
+}
+
+.button:hover{
+    background: #000;
+}
+
+
+.radiocontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+
+.radiocontainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+
+.radiocontainer input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+.radiocontainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.radiocontainer .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.tab {
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  font-size: 15px;
+  width:100%;
+  border: 1px solid #d33f8d;
+}
+
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+
+.tab button:hover {
+  background: #d33f8d;
+  color:white;
+}
+
+.tab button.active {
+  background-color: #d33f8d;
+  color:white;
+}
+
+
+
+
